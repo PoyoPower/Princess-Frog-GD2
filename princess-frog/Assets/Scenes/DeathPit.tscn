@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7ditmhvesn0w"]
+
+[ext_resource type="Script" uid="uid://dkb6q2t1nk4i2" path="res://Assets/Scripts/death_pit.gd" id="1_xqrlo"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_mwkb2"]
+
+[node name="DeathPit" type="Area2D"]
+script = ExtResource("1_xqrlo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("WorldBoundaryShape2D_mwkb2")
+
+[connection signal="body_entered" from="." to="." method="_on_death_pit_body_entered"]
