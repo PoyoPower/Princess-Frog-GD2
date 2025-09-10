@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://goglq6m8dse7"]
-
-[ext_resource type="PackedScene" uid="uid://bf7qk42chiep4" path="res://Assets/Scenes/Area Functionality/area_template.tscn" id="1_wjp1n"]
-
-[node name="Area1" instance=ExtResource("1_wjp1n")]
-
-[node name="AreaExit" parent="." index="2"]
-position = Vector2(729, 309)
